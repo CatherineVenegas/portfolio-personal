@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proyecto - Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- Hoja de estilos externa -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Overlay para navegación mobile -->
+  <div class="overlay" id="overlay"></div>
+
+  <!-- Botón hamburguesa (mobile) -->
+  <button class="hamburger" id="hamburger" aria-label="Menú">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <!-- ── Sidebar ─────────────────────────────────────── -->
+  <aside class="sidebar" id="sidebar">
+
+    <div class="sidebar-brand">Portfolio</div>
+
+    <div class="sidebar-label">Navegación</div>
+    <nav>
+      <ul>
+        <li><a href="#home" class="active">Inicio</a></li>
+        <li><a href="#website">Proyectos</a></li>
+        <li><a href="https://www.linkedin.com/in/catherine-venegas-design" target="_blank">Linkedin</a></li>
+        <li><a href="https://www.behance.net/catyvenegas" target="_blank">Behance</a></li>
+      </ul>
+    </nav>
+
+    <div class="sidebar-divider"></div>
+
+    <div class="sidebar-contact-section">
+      <div class="sidebar-label">Contacto</div>
+        <a class="sidebar-btn" href="https://wa.me/56997105614" target="_blank">Enviar Mensaje</a>
+
+      <div class="rrss-label">RRSS</div>
+      <div class="rrss-links">
+        <a href="http://instagram.com/cathy.fotografa" target="_blank">IG</a>
+        <a href="https://www.behance.net/catyvenegas" target="_blank">BE</a>
+        <a href="https://www.linkedin.com/in/catherine-venegas-design" target="_blank">LI</a>
+      </div>
+    </div>
+
+  </aside>
+
+  <!-- ── Main ───────────────────────────────────────── -->
+  <div class="main-wrapper" id="mainWrapper">
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+
+      <!-- Info personal -->
+      <div class="hero-info">
+        <p class="role-tag">Portfolio — Diseño Gráfico &amp; UX/UI</p>
+
+        <h1 class="hero-name">Catherine<br>Venegas</h1>
+
+        <p class="hero-bio">
+          Profesional versátil con experiencia en Diseño Gráfico, Web (UX/UI)
+          y Marketing Digital. Competente en la creación de campañas publicitarias
+          y desarrollo digital. Hábil en el manejo de herramientas de Adobe.
+        </p>
+
+        <!-- Experiencia laboral -->
+        <div class="experience-block">
+          <p class="exp-title">Experiencia Laboral</p>
+
+          <div class="exp-item">
+            <div>
+              <p class="exp-role">Encargada de Marketing</p>
+              <p class="exp-company">Centro de Psicología Integral</p>
+            </div>
+            <span class="exp-years">2025 – 2026</span>
+          </div>
+
+          <div class="exp-item">
+            <div>
+              <p class="exp-role">Diseñadora Pre-Prensa</p>
+              <p class="exp-company">Imprenta Graff</p>
+            </div>
+            <span class="exp-years">2024 – 2025</span>
+          </div>
+        </div>
+
+        <a href="https://www.linkedin.com/in/catherine-venegas-design/" target="_blank" class="cv-btn">Ver Currículum Vitae</a>
+      </div>
+
+      <!-- Panel visual / foto -->
+        <div class="hero-visual">
+          <div class="avatar-placeholder">
+            <img src="mi-foto.jpg" alt="Mi Foto" class="profile-img">
+          </div>
+        </div>
+
+    </section>
+
+    <!-- Proyectos -->
+    <section class="projects-section" id="website">
+
+      <div class="section-header">
+        <h2 class="section-heading">Mis Proyectos</h2>
+        <span class="section-count">03 Proyectos</span>
+      </div>
+
+      <div class="cards-grid">
+  <article class="card">
+    <a href="https://www.behance.net/gallery/232193681/Cabin-Retreats-Slovenia-Landing-Page-Web-Design" target="_blank">
+      <div class="card-img">
+        <img src="proyecto1.png" alt="Cabin Retreats" class="project-img">
+      </div>
+      <div class="card-body">
+        <p class="card-cat">Web Design</p>
+        <h3 class="card-title">Cabin Retreats Slovenia - Landing Page</h3>
+      </div>
+      <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M7 17L17 7M17 7H7M17 7v10"/>
+      </svg>
+    </a>
+  </article>
+
+  <article class="card">
+    <a href="https://www.behance.net/gallery/228792437/Rebel-Wine-Cabernet-Sauvignon-Label-Design-3D-Motion" target="_blank">
+      <div class="card-img">
+        <img src="proyecto2.png" alt="Rebel Wine" class="project-img">
+      </div>
+      <div class="card-body">
+        <p class="card-cat">Design 3D Motion</p>
+        <h3 class="card-title">Rebel Wine - Label Cabernet Sauvignon</h3>
+      </div>
+      <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M7 17L17 7M17 7H7M17 7v10"/>
+      </svg>
+    </a>
+  </article>
+
+  <article class="card">
+    <a href="https://www.behance.net/gallery/227331499/Chameleon-Beer-Label-Tropical-IPA-Gluten-Free" target="_blank" class="card-link">
+      <div class="card-img">
+        <img src="proyecto3.png" alt="Tropical IPA" class="project-img">
+      </div>
+      <div class="card-body">
+        <p class="card-cat">Product Design</p>
+        <h3 class="card-title">Tropical IPA Gluten Free - Chameleon Beer Label</h3>
+      </div>
+      <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M7 17L17 7M17 7H7M17 7v10"/>
+      </svg>
+    </a>
+  </article>
+</div>
+    </section>
+
+  </div><!-- /main-wrapper -->
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const sidebar   = document.getElementById('sidebar');
+    const overlay   = document.getElementById('overlay');
+
+    function toggleMenu() {
+      const open = sidebar.classList.toggle('open');
+      hamburger.classList.toggle('open', open);
+      overlay.classList.toggle('show', open);
+    }
+
+    hamburger.addEventListener('click', toggleMenu);
+    overlay.addEventListener('click', toggleMenu);
+
+    // Cerrar sidebar al hacer clic en un enlace (mobile)
+    sidebar.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        if (window.innerWidth <= 767) toggleMenu();
+      });
+    });
+
+    // Marcar enlace activo al hacer scroll
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks  = document.querySelectorAll('nav a');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          navLinks.forEach(l => l.classList.remove('active'));
+          const active = document.querySelector(`nav a[href="#${entry.target.id}"]`);
+          if (active) active.classList.add('active');
+        }
+      });
+    }, { threshold: 0.45 });
+
+    sections.forEach(s => observer.observe(s));
+  </script>
+
+</body>
+</html>
